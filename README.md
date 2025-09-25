@@ -24,17 +24,21 @@ $ brew install emacs-plus@29 [options] # install Emacs 29
 
 ```bash
 brew install emacs
-==> Fetching downloads for: emacs
-==> Downloading https://ghcr.io/v2/homebrew/core/emacs/manifests/30.2
-################################################################################################################################################## 100.0%
-==> Fetching emacs
-==> Downloading https://ghcr.io/v2/homebrew/core/emacs/blobs/sha256:6fd75aed5b6ef68991921b6e61b001272310d572e9cc3b4945aff00dfc381f59
-################################################################################################################################################## 100.0%
-==> Pouring emacs--30.2.arm64_sequoia.bottle.tar.gz
+
 ==> Caveats
 To start emacs now and restart at login:
   brew services start emacs
 Or, if you don't want/need a background service you can just run:
   /opt/homebrew/opt/emacs/bin/emacs --fg-daemon
 ==> Summary
+
+# dependencies
+
+$ brew install git ripgrep coreutils fd
+
+$ git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
+
+$ bin/doom install
+
+
 ```
