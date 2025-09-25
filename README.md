@@ -12,3 +12,11 @@ brew tap d12frosted/emacs-plus
 
 brew install emacs-plus --HEAD --with-modern-doom3-icon
 ```
+
+```bash
+$ brew tap d12frosted/emacs-plus
+$ brew install emacs-plus    [options] # install the latest release (Emacs 30)
+$ brew install emacs-plus@31 [options] # install Emacs 31 (master)
+$ brew install emacs-plus@30 [options] # install Emacs 30 (emacs-30)
+$ brew install emacs-plus@29 [options] # install Emacs 29
+```
